@@ -1,0 +1,397 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: poppins;
+    /* position: relative; */
+}
+.container{
+    margin-bottom: 30px;
+}
+.nav-container{
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    padding-top: 15px;
+}
+.logo{
+    display: flex;
+    flex: 1;
+}
+.logo h1{
+    font-size:1.3rem ;
+    padding: 20px 0 20px;
+    
+}
+.menuIcon h1{
+    padding: 20px;
+}
+/* .menuIcon{
+    justify-content: flex-end;
+} */
+#bars{
+    cursor: pointer;
+}
+#loginOverlay{
+    position: fixed;
+    display: none;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+}
+#overlay{
+    position: fixed;
+    display: none;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+    transition: 0.5s;
+}
+.overlayNavContainerMain{
+    background-color: #fff;
+}
+.overlayNavContainer{
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.overlayNavContainerInner{
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    width: 15%;
+    height: 100vh;
+    padding: 22px;
+    /* border: 1px solid #eee; */
+}
+.menuIconInner{
+    padding-bottom: 20px;
+    color: #000;
+}
+#cancel{
+    cursor: pointer;
+    transition: all .8s;
+}
+#cancel:hover{
+    background-color: red;
+    color:#fff;
+    border-radius: 10px;
+}
+.overlayInnerUl{
+    list-style: none;
+}
+.overlayInnerUl > li {
+    padding: 20px 0;
+    font-weight: 500;
+    font-size: 1rem;
+}
+.overlayInnerUl >li > a{
+    color: #000;
+    list-style: none;
+    text-decoration: none;
+    padding: 20px;
+    transition: all .8s;
+}
+.overlayInnerUl >li > a:hover{
+    background-color: purple;
+    color:#fff;
+    border-radius: 10px;
+}
+.logins{
+    justify-content: space-evenly;
+    position: absolute;
+    bottom: 5%;
+}
+.signUpDiv , .loginDiv{
+    padding: 15px;
+    margin-left: 45px;
+    border-radius: 10px;
+}
+.signUpDiv{
+    background-color: purple;
+    color: #fff;
+}
+.loginDiv{
+    margin-bottom: 20px;
+    background-color: #eee;
+    color: purple;
+}
+.loginDiv > a, .signUpDiv > a{
+    list-style: none;
+    text-decoration: none;
+    font-weight: 400px;
+}
+.menuIcon h1{
+    font-size: 1.3rem;
+}
+.headingContainer{
+    max-width: 1000px;
+    margin: auto;
+}
+.headingInnerContainer{
+    text-align: center;
+    padding: 20px;
+}
+.convenientHead{
+    font-size: 3rem;
+    line-height: 3.1rem;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.convenientParagraph{
+    font-size: .8rem;
+    color: rgb(190, 187, 187);
+    margin-bottom: 30px;
+}
+.getStarted{
+    padding:18px 50px;
+    border-radius: 10px;
+    background-color: purple;
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+}
+.cardContainerInner{
+    max-width: 1300px;
+    margin: auto;
+}
+.cardContainerhead{
+    text-align: center; 
+    padding: 30px 0px;
+    text-transform: capitalize;
+}
+.Cards{
+    display: flex;
+    justify-content: space-around;
+    flex: 1;
+}
+ .cardInner{ 
+    width: 300px;
+    height: 350px;
+    text-align: center;
+} 
+.innerHead{
+    font-size: 1.5rem;
+    padding: 12px;
+    text-transform: capitalize;
+}
+.innerPara{
+    text-align: center;
+    color: rgb(40, 40, 40);
+    font-size: 1.2rem;
+}
+.PromiseCardInner {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.arrowDown{
+    position: relative;
+    left: 320px;
+    width: 600px;
+}
+.arrowDown2{
+    position: relative;
+    left: 550px;
+    width: 600px;
+}
+.PromiseCardInnerContent{
+    width: 550px;
+}
+.PromiseCardInnerContentHead{
+    text-align: left;
+    text-transform: capitalize;
+    font-size: 2rem;
+    padding: 12px 0px;
+}
+.PromiseCardInnerContentPara{
+    padding:  0px 0px 10px 0px;
+    text-align: left;
+    font-size: .9rem;
+}
+.list{
+    list-style-type: disc;
+    padding: 5px 0;
+}
+/* .arrowDown{
+    max-width: 1200px;
+    margin: auto;
+} */
+.faqContainer{
+    background-color: #eee;
+}
+.faqContentsInner{
+    max-width: 1200px;
+    margin: auto;
+}
+.faqContents{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+.faqh1{
+    text-align: center;
+    text-transform: capitalize;
+    padding: 20px;
+}
+.faqParas{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.faqParas span{
+    color: #333;
+    cursor: pointer;
+    transition: .3s;
+}
+footer{
+    background-color: purple;
+}
+.footerInner{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.logoFooter, .quickLinks, .contactLinks{
+    padding: 30px 0;
+    text-align: center;
+}
+.promiseCardFooter{
+    text-transform:capitalize;
+    color: #fff;
+}
+.wish{
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+.quickLinks{
+    text-align: left;
+}
+.quickLinks .company {
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 10px 0;
+}
+.quickLinks .about{
+    color: #fff;
+    font-weight:500;
+    padding: 5px 0;
+    text-transform: capitalize;
+}
+.contactLinks{
+    text-align: left;
+    color: #fff;
+}
+.getInTouch{
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 10px 0;
+}
+.days, .email{
+    padding: 5px 0;
+    text-transform: capitalize;
+    font-weight:500;
+}
+.icons{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 10px;
+}
+.hr{
+    color: #fff;
+}
+.copyright{
+    text-align: center;
+    padding: 30px;
+    color: #fff;
+    font-weight:500;
+}
+.dropdown{
+    font-size: .8rem;
+    color: rgb(255, 255, 255);
+    display: none;
+    padding: 10px;
+    background-color: #333;
+}
+
+/* body{
+    font-family: 'Work Sans', sans-serif;
+}
+.faq-heading{
+    border-bottom: #777;
+    padding: 20px 60px;
+}
+.faq-container{
+display: flex;
+justify-content: center;
+flex-direction: column;
+}
+.hr-line{
+  width: 60%;
+  margin: auto;
+  
+}  */
+/* Style the buttons that are used to open and close the faq-page body */
+/* .faq-page {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 30px 20px;
+    width: 60%;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin: auto;
+}  */
+/* .faq-body{
+    margin: auto; 
+    text-align: center; 
+   width: 50%; 
+   padding: auto;
+   
+} */
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+/* .active,
+.faq-page:hover {
+    background-color: #F9F9F9;
+} */
+/* Style the faq-page panel. Note: hidden by default */
+ /* .faq-body {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+}  */
+ /* .faq-page:after {
+    content: '\02795';  */
+    /* Unicode character for "plus" sign (+) */
+    /* font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}  */
+/* .active:after { */
+    /* content: "\2796";  */
+    /* Unicode character for "minus" sign (-) */
+/* }  */
